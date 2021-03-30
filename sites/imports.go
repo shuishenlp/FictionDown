@@ -11,7 +11,6 @@ import (
 	"github.com/ma6254/FictionDown/sites/new81"
 	"github.com/ma6254/FictionDown/sites/qidian"
 	"github.com/ma6254/FictionDown/sites/shumil_co"
-	"github.com/ma6254/FictionDown/sites/wanbentxt"
 )
 
 type siteFunc func() site.SiteA
@@ -24,7 +23,6 @@ func addSiteFunc(fn siteFunc) {
 
 func InitSites() {
 	addSiteFunc(qidian.Site)
-	addSiteFunc(wanbentxt.Site)
 	addSiteFunc(shumil_co.Site)
 	addSiteFunc(new81.Site)
 	addSiteFunc(booktxt_net.Site)
